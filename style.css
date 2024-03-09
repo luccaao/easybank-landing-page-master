@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+    
+
+}
+
+
+
+header {
+    width: 100%; 
+    
+
+}
+
+
+.navegacao{
+    z-index: 5000;
+    display: flex;
+    justify-content: space-around;
+    background-color: hsl(0, 0%, 98%);
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding: 15px;
+   
+}
+
+ul li {
+    cursor: pointer;
+    
+}
+
+.menu-desktop li {
+    cursor: pointer;
+    font-weight: 500;
+    padding: 10px 0;
+    position: relative;
+}
+
+.menu-desktop li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: hsl(154, 59%, 51%);
+    bottom: 5%;
+    left: 0;
+    transition: 0.5s;
+}
+
+.menu-desktop li:hover::after {
+    width: 100%;
+}
+
+
+
+.menu-desktop{
+    display: none;
+    list-style: none;
+}
+
+.menu-mobile {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    margin-top: 5%;
+    border-radius: 5px;
+    width: 80%;
+    padding: 15px;
+    background-color: hsl(0, 0%, 98%);
+    
+}
+
+.menu-mobile li {
+    width: 100%;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 0;
+    
+    
+}
+
+.menu-mobile.active {
+    display: flex;
+    
+}
+
+.quebra2 {
+    display: none;
+}
+
+
+.navegacao button {
+    display: none;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+#hamb {
+    
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#close {
+    display: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.active {
+    display: none;
+}
+
+.banner-container{
+    
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-container img {
+    width: 100%;
+    height: 100%;  
+}
+
+.phones {
+    position: absolute;
+    top: -15%;
+    right: 0;
+}
+
+.secao-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-container .secao-conteudo {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.secao-conteudo h1 {
+    font-size: 40px;
+    color: hsl(233, 8%, 40%);
+    font-weight: 200;
+}
+
+.secao-conteudo p {
+    color: hsl(233, 8%, 62%);
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.botao-request{
+    display: block;
+    background: hsl(154, 59%, 51%);
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: 500;
+    
+}
+
+.botao-request:hover {
+    background: linear-gradient(to right, hsl(154, 59%, 51%), hsl(192, 70%, 51%));
+}
+
+
+.choose-container{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+    padding: 15px ;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.choose-conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    
+}
+
+.choose-container .choose-conteudo h2 {
+    color: hsl(233, 8%, 40%);
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300; 
+    margin-bottom: 30px;
+}
+
+.choose-container .choose-conteudo p {
+    color: hsl(233, 8%, 62%);
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+.banking-online{
+    margin-top: 50px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banking-online img {
+    width: 30%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.banking-online h3 {
+    color: hsl(233, 8%, 40%);
+    font-size: 25px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 300; 
+    margin-bottom: 30px;
+}
+
+.banking-online p {
+    color: hsl(233, 8%, 62%);
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+.latest-container{
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.teste5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.latest-container h2 {
+    color: hsl(233, 8%, 40%);
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300; 
+    margin-bottom: 30px;
+}
+
+.latest-container .latest-conteudo {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(220, 16%, 96%);
+    align-items: center;
+    padding: 5px;
+}
+
+.latest-conteudo img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.latest-conteudo span {
+    color: hsl(233, 8%, 62%);
+    font-size: 15px;
+    margin-top: 30px;
+    align-self: start;
+    font-weight: 300; 
+    margin-left: 10%;
+    
+}
+
+.latest-conteudo h3 {
+    color: hsl(233, 8%, 20%);
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: start;
+    font-weight: 300; 
+    margin-left: 10%;
+}
+
+.latest-conteudo p {
+    color: hsl(233, 8%, 62%);
+    font-size: 18px;
+    text-align: start;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-bottom: 30px;
+    
+}
+
+
+.footer-conteudo {
+    margin-top: 150px;
+    background-color: hsl(233, 26%, 24%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.background-banner2 {
+    display: none;
+}
+
+.background-banner {
+    display: block;
+}
+
+.footer-conteudo .logo {
+    color: white;
+}
+
+.footer-menu ul {
+    list-style: none;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    gap: 20px;
+    color: hsl(233, 8%, 72%);
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-top: 90px;
+    
+}
+
+.footer-conteudo button {
+    display: block;
+    background: hsl(154, 59%, 51%);
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.footer-conteudo button:hover {
+    background: linear-gradient(to right, hsl(154, 59%, 51%), hsl(192, 70%, 51%));
+}
+
+.footer-conteudo p {
+    color: hsl(233, 8%, 62%);
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+    .menu-mobile {
+        display: none;
+    }
+    .menu-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .navegacao button {
+        display: block;
+        display: block;
+        background: linear-gradient(45deg, hsl(154, 59%, 51%), hsl(192, 70%, 51%));
+        color: white;
+        padding: 15px 40px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-weight: 500;
+    }
+    .navegacao .menu-mobile {
+        display: none;
+    }
+    .navegacao .menu-desktop {
+        display: flex
+    }
+
+    #hamb {
+        display: none;
+    }
+
+    .background-banner{
+        display: none;
+    }
+
+    .banner-container{
+        width: 50%;
+        overflow-x: hidden;
+        
+        float: right;
+    }
+
+    .banner-conteudo {
+        
+        width: 50vw;
+        position: relative;
+        overflow-x: hidden;
+        height: 70vh;
+        display: block;
+        
+    }
+
+    .quebra2 {
+        display: block;
+    }
+
+    .background-banner2  {
+        top: 0;
+        overflow-x: hidden;
+        width: 8vw;
+        left: 0;
+        z-index: -1;
+        position: absolute;
+       
+        display: block;
+    }
+
+    .secao-container{
+        
+        width: 50%;
+        height: 50vh;
+        padding-left: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    
+
+    .secao-conteudo p {
+        width: 100%;
+        display: flex;
+        text-align: start;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .secao-conteudo h1 {
+        width: 100%;
+        display: flex;
+        font-weight:500;
+        text-align: start;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .quebra1{
+        display: none;
+    }
+
+    .secao-conteudo button {
+        float: left;
+        display: flex;
+        
+        justify-content: start;
+        align-self: start;
+        flex-direction: column;
+    }
+
+    .choose-container{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        
+        flex-direction: column;
+        margin-top: 150px;
+        padding: 15px ;
+        background-color: hsl(0, 0%, 98%);
+    }
+
+    .choose-container .choose-conteudo {
+        width: 80%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+       
+        flex-direction: column;
+    }
+
+    .choose-conteudo h2 {
+        width: 100%;
+        display: flex;
+        font-weight:500;
+        text-align: start;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .choose-conteudo span {
+        width: 50%;
+        font-size: 18px;
+        color: hsl(233, 8%, 62%);
+        text-align: start;
+          
+    }
+
+    .banking-online img {
+        width: 10%;
+        
+        
+    }
+
+    
+
+    .teste {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+    }
+
+
+    .banking-online{
+        width: 23%;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .banking-online span {
+        width: 100%;
+        display: flex;
+        font-weight:500;
+        text-align: start;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .banking-online img {
+        width: 20%;
+    }
+
+    .latest-container{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .teste5 {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .phones{
+        
+        position: absolute;
+        width: 30%;
+    }
+
+    .
+
+    .latest-conteudo {
+        width: 80%;
+        
+    }
+
+    .latest-conteudo img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .latest-conteudo:nth-child(1) {
+        
+        width: 80%;
+    }
+
+    
+
+   
+
+
+}
